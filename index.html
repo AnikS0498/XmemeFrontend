@@ -30,18 +30,18 @@
                   url: "https://x--meme.herokuapp.com/memes",
                   type: "POST",
                   data: json,
-                  dataType: "json",
+                  // dataType: "json",
                   contentType: "application/json",
                   success: function(result){
-                    
+                    console.log("Done");  
                     console.log(result);
+                    location.reload();
                   },
                   error: function(error){
                     console.log(error);
+                    location.reload();
                   }
-              }).done(()=>{
-                location.reload();
-              })
+              });
 
               // location.reload();
           });

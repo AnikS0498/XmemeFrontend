@@ -33,13 +33,14 @@
                   dataType: "json",
                   contentType: "application/json",
                   success: function(result){
+                    location.reload();
                     console.log(result);
                   },
                   error: function(error){
                     console.log(error);
                   }
               });
-              location.reload();
+
           });
       });
     </script>

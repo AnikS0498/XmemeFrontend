@@ -27,7 +27,7 @@
             const json = JSON.stringify(obj);
             console.log(json);
               $.ajax({
-                  url: "http://localhost:8080/memes",
+                  url: "https://x--meme.herokuapp.com/memes",
                   type: "POST",
                   data: json,
                   dataType: "json",
@@ -56,7 +56,7 @@
                 <a class="nav-link" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://x--meme.herokuapp.com/memes">MemeFeed</a>
+                <a class="nav-link" href="https://x--meme.herokuapp.com/memes" target="_blank">MemeFeed</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
